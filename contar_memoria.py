@@ -48,7 +48,7 @@ class EntrenadorMental:
     def mostrar_titulo(self):
         """Muestra el título del programa"""
         print("=" * 60)
-        print("🧠 ENTRENADOR MENTAL - RAMÓN CAMPAYO 🧠")
+        print("ENTRENADOR MENTAL - RAMÓN CAMPAYO")
         print("=" * 60)
         print("Ejercicios de Memorización de Alta Intensidad")
         print("=" * 60)
@@ -57,9 +57,9 @@ class EntrenadorMental:
         """Muestra información sobre las técnicas de Ramón Campayo"""
         self.limpiar_pantalla()
         self.mostrar_titulo()
-        print("\n📚 TÉCNICAS DE RAMÓN CAMPAYO")
+        print("\nTÉCNICAS DE RAMÓN CAMPAYO")
         print("=" * 60)
-        print("🧠 MÉTODO DE ASOCIACIONES INVEROSÍMILES")
+        print("MÉTODO DE ASOCIACIONES INVEROSÍMILES")
         print("-" * 40)
         print("• Crea imágenes vívidas y exageradas")
         print("• Usa asociaciones inverosímiles")
@@ -67,44 +67,44 @@ class EntrenadorMental:
         print("• Añade movimiento y acción")
         print("• Incluye emociones intensas")
         print()
-        print("🔢 TÉCNICA PARA NÚMEROS:")
+        print("TÉCNICA PARA NÚMEROS:")
         print("-" * 30)
         print("• Asocia cada número con una imagen")
         print("• Crea historias con los números")
         print("• Usa el método de grupos de 4")
         print("• Practica la retentiva diariamente")
         print()
-        print("💡 CONSEJOS PRÁCTICOS:")
+        print("CONSEJOS PRÁCTICOS:")
         print("-" * 25)
         print("• Concentración total durante 15-20 minutos")
         print("• Descanso de 5 minutos entre sesiones")
         print("• Repaso mental antes de dormir")
         print("• Competición contigo mismo")
         print()
-        print("🎯 OBJETIVO: Memorizar 100 números en 5 minutos")
-        print("📈 PROGRESIÓN: De 10 a 20, 30, 50, 100 números")
+        print("OBJETIVO: Memorizar 100 números en 5 minutos")
+        print("PROGRESIÓN: De 10 a 20, 30, 50, 100 números")
         
         input("\nPresiona Enter para continuar...")
 
     def mostrar_menu_principal(self):
         """Muestra el menú principal"""
-        print("\n📋 MENÚ PRINCIPAL")
-        print("1. 🎯 Ejercicio de Números (Básico)")
-        print("2. 🧠 Ejercicio de Números (Avanzado)")
-        print("3. 📝 Ejercicio de Palabras")
-        print("4. 🔢 Ejercicio de Secuencias")
-        print("5. 🖼️  Ejercicio de Imágenes")
-        print("6. 📊 Ver Estadísticas")
-        print("7. 🏆 Ver Record Personal")
-        print("8. 📚 Técnicas de Ramón Campayo")
-        print("9. ❌ Salir")
+        print("\nMENÚ PRINCIPAL")
+        print("1. Ejercicio de Números (Básico)")
+        print("2. Ejercicio de Números (Avanzado)")
+        print("3. Ejercicio de Palabras")
+        print("4. Ejercicio de Secuencias")
+        print("5. Ejercicio de Imágenes")
+        print("6. Ver Estadísticas")
+        print("7. Ver Record Personal")
+        print("8. Técnicas de Ramón Campayo")
+        print("9. Salir")
         print("-" * 60)
 
     def mostrar_estadisticas(self):
         """Muestra las estadísticas del usuario"""
         self.limpiar_pantalla()
         self.mostrar_titulo()
-        print("\n📊 ESTADÍSTICAS")
+        print("\nESTADÍSTICAS")
         print(f"Puntuación Total: {self.puntuacion_total}")
         print(f"Nivel Actual: {self.nivel}")
         print(f"Ejercicios Completados: {self.ejercicios_completados}")
@@ -120,7 +120,7 @@ class EntrenadorMental:
         """Ejercicio de memorización de números - Técnicas de Ramón Campayo"""
         self.limpiar_pantalla()
         self.mostrar_titulo()
-        print("\n🎯 EJERCICIO DE NÚMEROS - RAMÓN CAMPAYO")
+        print("\nEJERCICIO DE NÚMEROS - RAMÓN CAMPAYO")
         print("Técnicas de memorización avanzada")
         print("Memoriza el número completo en 1 segundo")
         print("-" * 60)
@@ -150,21 +150,21 @@ class EntrenadorMental:
         numeros = [random.randint(0, 9) for _ in range(longitud)]
         numero_completo = ''.join(map(str, numeros))
         
-        print(f"📱 {tipo_ejercicio} - {longitud} DÍGITOS")
+        print(f"{tipo_ejercicio} - {longitud} DÍGITOS")
         print(f"Nivel actual: {self.nivel}")
-        print("💡 CONSEJO: Crea asociaciones visuales rápidas")
+        print("CONSEJO: Crea asociaciones visuales rápidas")
         print("=" * 60)
         print()
-        print("🔢 PREPARA TU MENTE...")
+        print("PREPARA TU MENTE...")
         print("El número aparecerá en:")
         for i in range(3, 0, -1):
             print(f"   {i}...")
             time.sleep(0.5)
         
         print()
-        print("🎯 ¡MEMORIZA AHORA!")
+        print("¡MEMORIZA AHORA!")
         print("=" * 60)
-        print(f"📱 {numero_completo}")
+        print(f"{numero_completo}")
         print("=" * 60)
         
         # Solo 1 segundo para memorizar
@@ -173,11 +173,11 @@ class EntrenadorMental:
         # Limpiar pantalla inmediatamente
         self.limpiar_pantalla()
         self.mostrar_titulo()
-        print("\n🎯 EJERCICIO DE NÚMEROS - RAMÓN CAMPAYO")
+        print("\nEJERCICIO DE NÚMEROS - RAMÓN CAMPAYO")
         print("¡TIEMPO COMPLETADO!")
         print("=" * 60)
         print()
-        print("📝 ESCRIBE EL NÚMERO COMPLETO:")
+        print("ESCRIBE EL NÚMERO COMPLETO:")
         print("-" * 60)
         
         # Obtener respuesta del usuario
@@ -203,31 +203,31 @@ class EntrenadorMental:
         self.puntuacion_total += puntuacion
         self.ejercicios_completados += 1
         
-        print(f"\n📊 RESULTADOS:")
-        print(f"✅ Dígitos correctos: {correctos}/{len(numeros)}")
-        print(f"📈 Porcentaje de acierto: {porcentaje_correcto:.1%}")
-        print(f"🏆 Puntuación: {puntuacion}/100")
-        print(f"🎯 Número correcto: {numero_completo}")
-        print(f"📱 Tu respuesta: {respuesta}")
+        print(f"\nRESULTADOS:")
+        print(f"Dígitos correctos: {correctos}/{len(numeros)}")
+        print(f"Porcentaje de acierto: {porcentaje_correcto:.1%}")
+        print(f"Puntuación: {puntuacion}/100")
+        print(f"Número correcto: {numero_completo}")
+        print(f"Tu respuesta: {respuesta}")
         
         # Feedback específico según el rendimiento
         if puntuacion >= 95:
-            print("🌟 ¡PERFECTO! Memoria excepcional")
+            print("PERFECTO! Memoria excepcional")
             if self.nivel < 10:
                 self.nivel += 1
-                print(f"🚀 ¡Subiste al nivel {self.nivel}!")
+                print(f"Subiste al nivel {self.nivel}!")
         elif puntuacion >= 80:
-            print("🎉 ¡EXCELENTE! Las técnicas están funcionando")
+            print("EXCELENTE! Las técnicas están funcionando")
             if self.nivel < 10:
                 self.nivel += 1
-                print(f"🚀 ¡Subiste al nivel {self.nivel}!")
+                print(f"Subiste al nivel {self.nivel}!")
         elif puntuacion >= 60:
-            print("👍 Buen trabajo, sigue practicando")
+            print("Buen trabajo, sigue practicando")
         else:
-            print("💪 No te rindas. Practica más la velocidad")
+            print("No te rindas. Practica más la velocidad")
         
         # Consejos específicos de Ramón Campayo
-        print(f"\n💡 CONSEJO DE RAMÓN CAMPAYO:")
+        print(f"\nCONSEJO DE RAMÓN CAMPAYO:")
         if puntuacion < 50:
             print("   - Practica con números más cortos primero")
             print("   - Usa asociaciones visuales rápidas")
@@ -248,9 +248,9 @@ class EntrenadorMental:
         """Ejercicio avanzado de memorización de números con técnicas específicas"""
         self.limpiar_pantalla()
         self.mostrar_titulo()
-        print("\n🧠 EJERCICIO AVANZADO DE NÚMEROS")
+        print(f"\nEJERCICIO AVANZADO DE NÚMEROS")
         print("Técnicas de Ramón Campayo: Velocidad Extrema")
-        print("⚠️  MODO CONTINUO - Solo se puede salir terminando el programa")
+        print("MODO CONTINUO - Solo se puede salir terminando el programa")
         print("-" * 60)
         
         # Dificultad extrema según el nivel
@@ -261,18 +261,18 @@ class EntrenadorMental:
         else:
             longitud = 12
         
-        print(f"⚡ VELOCIDAD EXTREMA - {longitud} DÍGITOS")
-        print(f"⏱️  Nuevo número cada 2 segundos")
-        print(f"🎯 Nivel: {self.nivel}")
+        print(f"VELOCIDAD EXTREMA - {longitud} DÍGITOS")
+        print(f"Nuevo número cada 2 segundos")
+        print(f"Nivel: {self.nivel}")
         print("=" * 60)
         print()
-        print("🔢 PREPARA TU MENTE...")
+        print("PREPARA TU MENTE...")
         for i in range(3, 0, -1):
             print(f"   {i}...")
             time.sleep(0.3)
         
         print()
-        print("⚡ ¡VELOCIDAD MÁXIMA - MODO CONTINUO!")
+        print("VELOCIDAD MÁXIMA - MODO CONTINUO")
         print("=" * 60)
         
         # Variables para el modo continuo
@@ -288,9 +288,9 @@ class EntrenadorMental:
                 numero_completo = ''.join(map(str, numeros))
                 numeros_memorizados.append(numero_completo)
                 
-                print(f"\n🎯 RONDA {ronda}")
+                print(f"\nRONDA {ronda}")
                 print("=" * 60)
-                print(f"📱 {numero_completo}")
+                print(f"{numero_completo}")
                 print("=" * 60)
                 
                 # Esperar 1 segundo para memorizar
@@ -299,18 +299,18 @@ class EntrenadorMental:
                 # Limpiar pantalla
                 self.limpiar_pantalla()
                 self.mostrar_titulo()
-                print("\n🧠 EJERCICIO AVANZADO DE NÚMEROS")
-                print("⚠️  MODO CONTINUO - Solo se puede salir terminando el programa")
+                print("\nEJERCICIO AVANZADO DE NÚMEROS")
+                print("MODO CONTINUO - Solo se puede salir terminando el programa")
                 print("-" * 60)
-                print(f"⚡ VELOCIDAD EXTREMA - {longitud} DÍGITOS")
-                print(f"⏱️  1 segundo para memorizar, 2 segundos para pasar")
-                print(f"🎯 Nivel: {self.nivel}")
+                print(f"VELOCIDAD EXTREMA - {longitud} DÍGITOS")
+                print(f"1 segundo para memorizar, 2 segundos para pasar")
+                print(f"Nivel: {self.nivel}")
                 print("=" * 60)
                 print()
-                print("⚡ ¡VELOCIDAD MÁXIMA - MODO CONTINUO!")
+                print("VELOCIDAD MÁXIMA - MODO CONTINUO")
                 print("=" * 60)
                 
-                print(f"📝 ESCRIBE EL NÚMERO DE LA RONDA {ronda}:")
+                print(f"ESCRIBE EL NÚMERO DE LA RONDA {ronda}:")
                 print("-" * 60)
                 
                 # Obtener respuesta
@@ -324,37 +324,37 @@ class EntrenadorMental:
                 puntuacion_ronda = int((correctos / len(numeros)) * 100)
                 puntuacion_total += puntuacion_ronda
                 
-                print(f"\n📊 RESULTADOS RONDA {ronda}:")
-                print(f"✅ Correctos: {correctos}/{len(numeros)}")
-                print(f"📈 Puntuación ronda: {puntuacion_ronda}/100")
-                print(f"🎯 Número correcto: {numero_completo}")
-                print(f"📱 Tu respuesta: {respuesta}")
-                print(f"📊 Puntuación total: {puntuacion_total}")
+                print(f"\nRESULTADOS RONDA {ronda}:")
+                print(f"Correctos: {correctos}/{len(numeros)}")
+                print(f"Puntuación ronda: {puntuacion_ronda}/100")
+                print(f"Número correcto: {numero_completo}")
+                print(f"Tu respuesta: {respuesta}")
+                print(f"Puntuación total: {puntuacion_total}")
                 
                 if puntuacion_ronda >= 90:
-                    print("🌟 ¡VELOCIDAD EXTREMA! Tu memoria es increíble")
+                    print("VELOCIDAD EXTREMA! Tu memoria es increíble")
                 elif puntuacion_ronda >= 70:
-                    print("🎉 ¡MUY BUENO! La velocidad está mejorando")
+                    print("MUY BUENO! La velocidad está mejorando")
                 else:
-                    print("💪 Sigue practicando la velocidad de memorización")
+                    print("Sigue practicando la velocidad de memorización")
                 
-                print("\n⏱️  Preparando siguiente número en 2 segundos...")
+                print("\nPreparando siguiente número en 2 segundos...")
                 time.sleep(2)
                 
                 ronda += 1
                 
         except KeyboardInterrupt:
-            print("\n\n🛑 EJERCICIO INTERRUMPIDO")
+            print("\n\nEJERCICIO INTERRUMPIDO")
             print("=" * 60)
-            print(f"📊 RESUMEN FINAL:")
-            print(f"🎯 Rondas completadas: {ronda - 1}")
-            print(f"📈 Puntuación total: {puntuacion_total}")
+            print(f"RESUMEN FINAL:")
+            print(f"Rondas completadas: {ronda - 1}")
+            print(f"Puntuación total: {puntuacion_total}")
             if ronda > 1:
                 promedio = puntuacion_total / (ronda - 1)
-                print(f"📊 Promedio por ronda: {promedio:.1f}/100")
+                print(f"Promedio por ronda: {promedio:.1f}/100")
             
             # Mostrar todos los números y respuestas
-            print(f"\n📋 HISTORIAL COMPLETO:")
+            print(f"\nHISTORIAL COMPLETO:")
             print("-" * 60)
             for i in range(len(numeros_memorizados)):
                 print(f"Ronda {i+1}:")
@@ -372,7 +372,7 @@ class EntrenadorMental:
             promedio = puntuacion_total / (ronda - 1)
             if promedio >= 80 and self.nivel < 10:
                 self.nivel += 1
-                print(f"🚀 ¡Subiste al nivel {self.nivel}!")
+                print(f"Subiste al nivel {self.nivel}!")
         
         self.guardar_progreso()
         input("\nPresiona Enter para continuar...")
@@ -381,7 +381,7 @@ class EntrenadorMental:
         """Ejercicio de memorización de palabras"""
         self.limpiar_pantalla()
         self.mostrar_titulo()
-        print("\n📝 EJERCICIO DE PALABRAS")
+        print("\nEJERCICIO DE PALABRAS")
         print("Memoriza las palabras que aparecerán")
         print("Tendrás 5 segundos para memorizar cada palabra")
         print("-" * 60)
@@ -399,7 +399,7 @@ class EntrenadorMental:
             time.sleep(5)  # 5 segundos para memorizar
             self.limpiar_pantalla()
             self.mostrar_titulo()
-            print("\n📝 EJERCICIO DE PALABRAS")
+            print("\nEJERCICIO DE PALABRAS")
             print("Memoriza las palabras que aparecerán")
             print("Tendrás 5 segundos para memorizar cada palabra")
             print("-" * 60)
@@ -424,19 +424,19 @@ class EntrenadorMental:
         self.puntuacion_total += puntuacion
         self.ejercicios_completados += 1
         
-        print(f"\n✅ Resultado: {correctas}/{len(palabras_ejercicio)} palabras correctas")
-        print(f"📊 Puntuación: {puntuacion}/100")
-        print(f"🎯 Palabras correctas: {', '.join(palabras_ejercicio)}")
+        print(f"\nResultado: {correctas}/{len(palabras_ejercicio)} palabras correctas")
+        print(f"Puntuación: {puntuacion}/100")
+        print(f"Palabras correctas: {', '.join(palabras_ejercicio)}")
         
         if puntuacion >= 80:
-            print("🎉 ¡Excelente! Tu memoria está mejorando")
+            print("Excelente! Tu memoria está mejorando")
             if self.nivel < 10:
                 self.nivel += 1
-                print(f"🚀 ¡Subiste al nivel {self.nivel}!")
+                print(f"Subiste al nivel {self.nivel}!")
         elif puntuacion >= 60:
-            print("👍 Buen trabajo, sigue practicando")
+            print("Buen trabajo, sigue practicando")
         else:
-            print("💪 No te rindas, la práctica hace al maestro")
+            print("No te rindas, la práctica hace al maestro")
         
         self.guardar_progreso()
         input("\nPresiona Enter para continuar...")
@@ -445,7 +445,7 @@ class EntrenadorMental:
         """Ejercicio de secuencias lógicas"""
         self.limpiar_pantalla()
         self.mostrar_titulo()
-        print("\n🔢 EJERCICIO DE SECUENCIAS")
+        print("\nEJERCICIO DE SECUENCIAS")
         print("Completa la secuencia lógica")
         print("Tienes 30 segundos para resolver cada secuencia")
         print("-" * 60)
@@ -486,30 +486,30 @@ class EntrenadorMental:
             respuesta_num = int(respuesta)
             if respuesta_num == respuesta_correcta:
                 puntuacion = max(50, 100 - int(tiempo_total * 2))  # Menos puntos si tarda mucho
-                print(f"\n✅ ¡Correcto! El siguiente número es {respuesta_correcta}")
-                print(f"⏱️  Tiempo: {tiempo_total:.1f} segundos")
-                print(f"📊 Puntuación: {puntuacion}/100")
+                print(f"\n¡Correcto! El siguiente número es {respuesta_correcta}")
+                print(f"Tiempo: {tiempo_total:.1f} segundos")
+                print(f"Puntuación: {puntuacion}/100")
             else:
                 puntuacion = 0
-                print(f"\n❌ Incorrecto. La respuesta correcta era {respuesta_correcta}")
-                print(f"📊 Puntuación: 0/100")
+                print(f"\nIncorrecto. La respuesta correcta era {respuesta_correcta}")
+                print(f"Puntuación: 0/100")
         except ValueError:
             puntuacion = 0
-            print(f"\n❌ Respuesta inválida. La respuesta correcta era {respuesta_correcta}")
-            print(f"📊 Puntuación: 0/100")
+            print(f"\nRespuesta inválida. La respuesta correcta era {respuesta_correcta}")
+            print(f"Puntuación: 0/100")
         
         self.puntuacion_total += puntuacion
         self.ejercicios_completados += 1
         
         if puntuacion >= 80:
-            print("🎉 ¡Excelente! Tu lógica está mejorando")
+            print("Excelente! Tu lógica está mejorando")
             if self.nivel < 10:
                 self.nivel += 1
-                print(f"🚀 ¡Subiste al nivel {self.nivel}!")
+                print(f"Subiste al nivel {self.nivel}!")
         elif puntuacion >= 50:
-            print("👍 Buen trabajo, sigue practicando")
+            print("Buen trabajo, sigue practicando")
         else:
-            print("💪 No te rindas, la práctica hace al maestro")
+            print("No te rindas, la práctica hace al maestro")
         
         self.guardar_progreso()
         input("\nPresiona Enter para continuar...")
@@ -518,7 +518,7 @@ class EntrenadorMental:
         """Ejercicio de memorización de imágenes"""
         self.limpiar_pantalla()
         self.mostrar_titulo()
-        print("\n🖼️  EJERCICIO DE IMÁGENES")
+        print("\nEJERCICIO DE IMÁGENES")
         print("Memoriza las imágenes que aparecerán")
         print("Tendrás 4 segundos para memorizar cada imagen")
         print("-" * 60)
@@ -536,7 +536,7 @@ class EntrenadorMental:
             time.sleep(4)  # 4 segundos para memorizar
             self.limpiar_pantalla()
             self.mostrar_titulo()
-            print("\n🖼️  EJERCICIO DE IMÁGENES")
+            print("\nEJERCICIO DE IMÁGENES")
             print("Memoriza las imágenes que aparecerán")
             print("Tendrás 4 segundos para memorizar cada imagen")
             print("-" * 60)
@@ -567,19 +567,19 @@ class EntrenadorMental:
         self.puntuacion_total += puntuacion
         self.ejercicios_completados += 1
         
-        print(f"\n✅ Resultado: {correctas}/{len(imagenes_ejercicio)} imágenes correctas")
-        print(f"📊 Puntuación: {puntuacion}/100")
-        print(f"🎯 Imágenes correctas: {', '.join(imagenes_ejercicio)}")
+        print(f"\nResultado: {correctas}/{len(imagenes_ejercicio)} imágenes correctas")
+        print(f"Puntuación: {puntuacion}/100")
+        print(f"Imágenes correctas: {', '.join(imagenes_ejercicio)}")
         
         if puntuacion >= 80:
-            print("🎉 ¡Excelente! Tu memoria visual está mejorando")
+            print("Excelente! Tu memoria visual está mejorando")
             if self.nivel < 10:
                 self.nivel += 1
-                print(f"🚀 ¡Subiste al nivel {self.nivel}!")
+                print(f"Subiste al nivel {self.nivel}!")
         elif puntuacion >= 60:
-            print("👍 Buen trabajo, sigue practicando")
+            print("Buen trabajo, sigue practicando")
         else:
-            print("💪 No te rindas, la práctica hace al maestro")
+            print("No te rindas, la práctica hace al maestro")
         
         self.guardar_progreso()
         input("\nPresiona Enter para continuar...")
@@ -613,12 +613,12 @@ class EntrenadorMental:
         """Muestra el record personal"""
         self.limpiar_pantalla()
         self.mostrar_titulo()
-        print("\n🏆 RECORD PERSONAL")
+        print("\nRECORD PERSONAL")
         print(f"Puntuación más alta: {self.record_personal}")
         print(f"Puntuación actual: {self.puntuacion_total}")
         
         if self.puntuacion_total > self.record_personal:
-            print("🎉 ¡NUEVO RECORD! ¡Felicidades!")
+            print("NUEVO RECORD! Felicidades!")
             self.record_personal = self.puntuacion_total
             self.guardar_progreso()
         
@@ -651,18 +651,18 @@ class EntrenadorMental:
                 elif opcion == '8':
                     self.mostrar_tecnicas_campayo()
                 elif opcion == '9':
-                    print("\n👋 ¡Gracias por entrenar tu mente!")
+                    print("\n¡Gracias por entrenar tu mente!")
                     print("Recuerda: la práctica constante es la clave del éxito.")
                     break
                 else:
-                    print("❌ Opción inválida. Por favor, selecciona 1-9.")
+                    print("Opción inválida. Por favor, selecciona 1-9.")
                     time.sleep(2)
                     
             except KeyboardInterrupt:
-                print("\n\n👋 ¡Hasta luego! Sigue entrenando tu mente.")
+                print("\n\n¡Hasta luego! Sigue entrenando tu mente.")
                 break
             except Exception as e:
-                print(f"❌ Error: {e}")
+                print(f"Error: {e}")
                 time.sleep(2)
 
 def main():
